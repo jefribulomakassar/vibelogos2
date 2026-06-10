@@ -1,0 +1,71 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.logoMark {
+  color: var(--accent-light);
+}
+
+.logoText {
+  color: var(--text-primary);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.buyBtn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 8px;
+  background: var(--accent-dim);
+  color: var(--accent-light);
+  border: 1px solid rgba(124, 92, 252, 0.3);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.buyBtn:hover {
+  background: rgba(124, 92, 252, 0.25);
+  border-color: rgba(124, 92, 252, 0.6);
+}
+
+@media (max-width: 640px) {
+  .inner {
+    padding: 0 16px;
+  }
+  .count {
+    display: none;
+  }
+}
