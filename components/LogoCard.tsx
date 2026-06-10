@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Logo } from "@/types/logo";
-import { getDriveThumbnailUrl } from "@/lib/drive";
+import { getDriveThumbnailUrl } from "@/lib/drive-url";
 import styles from "./LogoCard.module.css";
 
 interface LogoCardProps {
